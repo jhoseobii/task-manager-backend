@@ -35,7 +35,7 @@ A backend-focused task management application built using Node.js, Express, and 
     - Tools: Git, GitHub, Postman
 
 ## Project Structure
-
+```bash
 backend-assignment/
 │
 ├── backend/
@@ -60,7 +60,7 @@ backend-assignment/
 │
 ├── .gitignore
 └── README.md
-
+```
 ## Authentication Flow
 
     - Users authenticate via JWT
@@ -84,9 +84,11 @@ RBAC is enforced at the controller level using role information from the JWT
 ## Running the Project Locally
 
 1. Backend Set Up
+```bash
 cd backend
 npm install
 npm run dev
+```
 
 Create a .env file inside backend/:
 ```bash
