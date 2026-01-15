@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1f2937;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.container {
+  max-width: 700px;     
+  margin: 40px auto;    
+  padding: 0 20px;
+}
+
+.container h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.card {
+  background: #f9fafb;       
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  border: 1px solid #e5e7eb;   
+}
+
+.card strong {
+  margin-right: auto;
+  flex: 1;
+  font-size: 16px;
+}
+
+.card select,
+.card button {
+  padding: 6px 10px;
+}
+
+#profileBox {
+  background: white;
+  color: black;
+  position: absolute;
+  right: 24px;
+  top: 56px;
+  padding: 12px;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f8;
+}
+
+.auth-card {
+  background: white;
+  padding: 30px 28px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  background: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #111827;
+}
+
+.auth-card p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.auth-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 10px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.btn {
+  padding: 10px 16px;
+  background: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #111827;
+}
+
+.btn-danger {
+  background: #dc2626;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+.input,
+.select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  background: white;
+}
+
+.select {
+  cursor: pointer;
+}

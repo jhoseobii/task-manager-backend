@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <div>
+    <a href="#" onclick="showHome()">Home</a>
+  </div>
+  <div>
+    <a href="#" onclick="showTasks()">All Tasks</a>
+    <a href="#" onclick="toggleProfile()">Profile</a>
+  </div>
+</nav>
+
+<div id="profileBox">
+  <p><strong id="p-name"></strong></p>
+  <p id="p-email"></p>
+  <button class="btn btn-danger" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+  <div class="panel">
+
+
+  <!--home-->
+  <div id="homeSection">
+    <h2>Create Task</h2>
+    <input id="new-task" class="input" placeholder="Task title" />
+    <button class="btn" onclick="createTask()">Add Task</button>
+
+  </div>
+
+  <!--task-->
+  <div id="tasksSection" style="display:none;">
+    <h2>All Tasks</h2>
+    <div id="tasks"></div>
+  </div>
+
+  <p id="msg"></p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
