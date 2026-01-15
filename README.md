@@ -107,15 +107,15 @@ Open the frontend using any of the following:
 ## API Endpoints (Overview)
 
 1. Auth
-
+```bash
     POST /api/v1/auth/register
 
     POST /api/v1/auth/login
 
     GET /api/v1/auth/me
-
+```
 2. Tasks
-
+```bash
     GET /api/v1/tasks
 
     POST /api/v1/tasks
@@ -125,7 +125,7 @@ Open the frontend using any of the following:
     PUT /api/v1/tasks/:id
 
     DELETE /api/v1/tasks/:id
-
+```
 ## Scalability Notes
 
 Stateless JWT authentication
