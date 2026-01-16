@@ -5,7 +5,7 @@ A backend-focused task management application built using Node.js, Express, and 
 ## Features
 
 ### Backend
-
+```bash
     - User registration & login with JWT authentication
     - Password hashing using bcrypt
     - Role-based access control (user / admin)
@@ -14,9 +14,10 @@ A backend-focused task management application built using Node.js, Express, and 
     - API versioning (/api/v1)
     - Centralized error handling
     - MongoDB database using Mongoose
+```
 
 ### Frontend (Supportive UI)
-
+```bash
     - Built using Vanilla JavaScript, HTML, CSS
     - Login & registration pages
     - Protected dashboard (JWT required)
@@ -25,17 +26,20 @@ A backend-focused task management application built using Node.js, Express, and 
     - Update task status (To Do / In Progress / Done)
     - Profile view (name, email, role)
     - Logout functionality
+```
 
 ## Tech Stack
-
+```bash
     - Backend: Node.js, Express.js
     - Database: MongoDB, Mongoose
     - Authentication: JWT, bcrypt
     - Frontend: HTML, CSS, Vanilla JavaScript
     - Tools: Git, GitHub, Postman
+```
 
 ## Project Structure
 
+```bash
 backend-assignment/
 │
 ├── backend/
@@ -58,19 +62,23 @@ backend-assignment/
 │   ├── app.js
 │   └── styles.css
 │
+├── postman/
+│   └── Backend-Assignment-REST-APIs.postman_collection.json
+|
 ├── .gitignore
 └── README.md
+```
 
 ## Authentication Flow
-
+```bash
     - Users authenticate via JWT
     - Token is stored in localStorage
     - Protected routes require Authorization: Bearer <token>
     - Logged-in user details are fetched using /api/v1/auth/me
-
+```
 
 ## Role-Based Access Control (RBAC)
-
+```bash
     Users
 
         Can create, view, update, and delete only their own tasks
@@ -78,40 +86,47 @@ backend-assignment/
     Admins
 
         Have elevated permissions (can delete any task)
+```
 
 RBAC is enforced at the controller level using role information from the JWT
 
 ## Running the Project Locally
 
-1. Backend Set Up
+### Backend Set Up
+```bash
 cd backend
 npm install
 npm run dev
-
+```
+```bash
 Create a .env file inside backend/:
+
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 
 The backend will start at:
 http://localhost:5000
 
-2. Frontend Set Up
-Open the frontend using any of the following:
-    Open frontend/register.html directly in browser
+### Frontend Set Up
+```bash
+Open frontend/register.html directly in browser
+```
 
 ## API Endpoints (Overview)
 
-1. Auth
-
+### Auth
+```bash
     POST /api/v1/auth/register
 
     POST /api/v1/auth/login
 
     GET /api/v1/auth/me
+```
 
-2. Tasks
-
+### Tasks
+```bash
     GET /api/v1/tasks
 
     POST /api/v1/tasks
@@ -121,6 +136,20 @@ Open the frontend using any of the following:
     PUT /api/v1/tasks/:id
 
     DELETE /api/v1/tasks/:id
+```
+## API Documentation
+
+Postman collection is included for easy API testing.
+
+**Location:**
+postman/Backend-Assignment-REST-APIs.postman_collection.json
+
+**How to use:**
+1. Import the collection into Postman
+2. Set environment variable:
+   - base_url = http://localhost:5000
+3. Login API auto-saves JWT token
+4. Task APIs reuse the saved token
 
 ## Scalability Notes
 
