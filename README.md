@@ -149,8 +149,7 @@ postman/Backend-Assignment-REST-APIs.postman_collection.json
 
 ## Scalability Notes
 
-Stateless JWT authentication
-
+- Stateless JWT authentication
 - Modular controller–route structure
 - Ready for Redis caching
 - Can be containerized using Docker
