@@ -102,8 +102,7 @@ http://localhost:5000
 
 2. Frontend Set Up
 ```bash
-Open the frontend using any of the following:
-    Open frontend/register.html directly in browser
+Open frontend/register.html directly in browser
 ```
 
 ## API Endpoints (Overview)
