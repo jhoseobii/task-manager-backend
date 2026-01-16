@@ -5,7 +5,7 @@ A backend-focused task management application built using Node.js, Express, and 
 ## Features
 
 ### Backend
-```bash
+
     - User registration & login with JWT authentication
     - Password hashing using bcrypt
     - Role-based access control (user / admin)
@@ -14,10 +14,10 @@ A backend-focused task management application built using Node.js, Express, and 
     - API versioning (/api/v1)
     - Centralized error handling
     - MongoDB database using Mongoose
-```
+
 
 ### Frontend (Supportive UI)
-```bash
+
     - Built using Vanilla JavaScript, HTML, CSS
     - Login & registration pages
     - Protected dashboard (JWT required)
@@ -26,7 +26,7 @@ A backend-focused task management application built using Node.js, Express, and 
     - Update task status (To Do / In Progress / Done)
     - Profile view (name, email, role)
     - Logout functionality
-```
+
 
 ## Tech Stack
 ```bash
@@ -63,17 +63,17 @@ backend-assignment/
 │
 ├── postman/
 │   └── Backend-Assignment-REST-APIs.postman_collection.json
-|
+│
 ├── .gitignore
 └── README.md
 ```
 ## Authentication Flow
-```bash
+
     - Users authenticate via JWT
     - Token is stored in localStorage
     - Protected routes require Authorization: Bearer <token>
     - Logged-in user details are fetched using /api/v1/auth/me
-```
+
 
 ## Role-Based Access Control (RBAC)
 ```bash
@@ -88,7 +88,7 @@ RBAC is enforced at the controller level using role information from the JWT
 
 ## Running the Project Locally
 
-1. Backend Set Up
+### Backend Set Up
 ```bash
 cd backend
 npm install
@@ -105,10 +105,10 @@ JWT_SECRET=your_secret_key
 The backend will start at:
 http://localhost:5000
 
-2. Frontend Set Up
-```bash
+### Frontend Set Up
+
 Open frontend/register.html directly in browser
-```
+
 
 ## API Endpoints (Overview)
 
@@ -151,14 +151,10 @@ postman/Backend-Assignment-REST-APIs.postman_collection.json
 
 Stateless JWT authentication
 
-Modular controller–route structure
-
-Ready for Redis caching
-
-Can be containerized using Docker
-
-Easily extendable to microservices architecture
-
+- Modular controller–route structure
+- Ready for Redis caching
+- Can be containerized using Docker
+- Easily extendable to microservices architecture
 
 
 ## Notes
