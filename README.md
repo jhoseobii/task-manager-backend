@@ -38,7 +38,6 @@ A backend-focused task management application built using Node.js, Express, and 
 ```
 
 ## Project Structure
-
 ```bash
 backend-assignment/
 │
@@ -68,7 +67,6 @@ backend-assignment/
 ├── .gitignore
 └── README.md
 ```
-
 ## Authentication Flow
 ```bash
     - Users authenticate via JWT
@@ -79,28 +77,26 @@ backend-assignment/
 
 ## Role-Based Access Control (RBAC)
 ```bash
-    Users
+- Users
+    Can create, view, update, and delete only their own tasks
 
-        Can create, view, update, and delete only their own tasks
-
-    Admins
-
-        Have elevated permissions (can delete any task)
+- Admins
+    Have elevated permissions (can delete any task)
 ```
 
 RBAC is enforced at the controller level using role information from the JWT
 
 ## Running the Project Locally
 
-### Backend Set Up
+1. Backend Set Up
 ```bash
 cd backend
 npm install
 npm run dev
 ```
-```bash
-Create a .env file inside backend/:
 
+Create a .env file inside backend/:
+```bash
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
@@ -109,7 +105,7 @@ JWT_SECRET=your_secret_key
 The backend will start at:
 http://localhost:5000
 
-### Frontend Set Up
+2. Frontend Set Up
 ```bash
 Open frontend/register.html directly in browser
 ```
